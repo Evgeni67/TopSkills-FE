@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className={classes.MainNavContainer}>
       <div className={classes.NavLabel}>My Movie Collection</div>
       <div>
-        <input className={classes.Input} />{" "}
+        <input className={classes.Input} placeholder={"TODO"} />
         <button className={classes.SearchBtn}>Search</button>
       </div>
     </div>

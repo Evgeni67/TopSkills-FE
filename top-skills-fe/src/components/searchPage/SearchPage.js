@@ -99,6 +99,9 @@ const SearchPage = () => {
                 "https://pic.onlinewebfonts.com/svg/img_98811.png"
               }
               alt="Movie Pic"
+              onClick={() =>
+                (window.location = `singleMoviePage/${movie.show.id}`)
+              }
               className={classes.MovieImg}
             />
             <div className={classes.Heading}>

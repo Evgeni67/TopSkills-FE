@@ -11,6 +11,10 @@ const backendUrls = {
     },
     put: {
       addToFavourites: (movieId) => `/account/addToFavourites/${movieId}`,
+      addNote: (movieId) => `/account/addNote/${movieId}`,
+    },
+    delete: {
+      note: `/account/deleteNote`,
     },
   },
 };
