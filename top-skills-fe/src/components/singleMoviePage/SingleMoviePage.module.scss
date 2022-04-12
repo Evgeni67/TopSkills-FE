@@ -1,0 +1,49 @@
+.MainMovieContainer {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  background-color: #59636c;
+  padding: 50px;
+  border-radius: 15px;
+  .MoviePic {
+    max-width: 300px;
+  }
+
+  .Heading {
+    display: flex;
+    width: 100%;
+    height: 460px;
+
+    border-radius: 0px 30px 30px 0px;
+    .InnerTextContainer {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding-top: 50px;
+      margin: 0 auto;
+
+      .InfoText {
+        max-width: 400px;
+        color: #1d2023;
+      }
+    }
+  }
+}
+
+.HandleFavouritesBtn {
+  margin-top: 15px;
+  width: 300px;
+  height: 65px;
+  align-self: left;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  color: white;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.HandleFavouritesBtn:hover {
+  background-color: #2f353a;
+}

@@ -1,0 +1,94 @@
+.MainSearchContainer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.HandleFavouritesBtn {
+  margin-top: 15px;
+  width: 300px;
+  height: 65px;
+  align-self: left;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  color: white;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.HandleFavouritesBtn:hover {
+  background-color: #2f353a;
+}
+
+.SearchButton {
+  margin-top: 15px;
+  width: 120px;
+  height: 45px;
+  align-self: left;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  color: white;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.SearchButton:hover {
+  background-color: #2f353a;
+}
+.InputCustom {
+  height: 35px;
+  width: 250px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: whitesmoke;
+}
+
+.MovieRow {
+  display: flex;
+  width: 80%;
+  margin: 10px auto 20px;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.54);
+  .MovieImg {
+    max-width: 300px;
+    border-radius: 30px 0px 0px 30px;
+    transition: ease-in-out 0.3s;
+  }
+  .Heading {
+    display: flex;
+    width: 100%;
+    height: 460px;
+    background-color: #59636c;
+    border-radius: 0px 30px 30px 0px;
+    .InnerTextContainer {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding-top: 50px;
+      margin: 0 auto;
+
+      .InfoText {
+        max-width: 400px;
+        color: #1d2023;
+      }
+    }
+  }
+}
+
+.MovieRow:hover {
+  -webkit-box-shadow: 0px 5px 15px 5px #000000;
+  box-shadow: 0px 5px 15px 5px #000000;
+}
+
+.MovieImg:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.MainHomeContainer {
+  display: flex;
+  width: 100%;
+
+  .Heading {
+    display: flex;
+    width: 100%;
+    height: 360px;
+    background-color: #59636c;
+
+    .InnerTextContainer {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      padding-top: 50px;
+      margin: 0 auto;
+
+      .InfoText {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.LinkButton {
+  margin-top: 15px;
+  height: 45px;
+  max-width: 120px;
+  .SearchButton {
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    background-color: transparent;
+    color: white;
+    transition: ease-in-out 0.2s;
+  }
+}
+
+.SearchButton:hover {
+  background-color: #1d2023;
+}
+
+.FavouritesContainer {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.FavImg {
+  max-width: 200px;
+  margin: 30px auto;
+}
+
+.FavImg {
+  max-width: 200px;
+  margin: 30px auto;
+  transition: ease-in-out 0.3s;
+  -webkit-box-shadow: 0px 14px 15px 5px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 14px 15px 5px rgba(0, 0, 0, 0.38);
+}
+.FavImg:hover {
+  max-width: 210px;
+  margin: 30px auto;
+  -webkit-box-shadow: 0px 18px 15px 5px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 18px 15px 5px rgba(0, 0, 0, 0.78);
+}
+
+.FavImgWrapper {
+  margin: 30px auto;
+}

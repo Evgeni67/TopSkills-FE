@@ -1,20 +1,24 @@
 import React, { memo, useState, useEffect } from "react";
-// import axios from "axios";
-// import backendUrls from "../../utils/backendurls";
+import { useDispatch, useSelector } from "react-redux";
+import { login, getMe } from "../../redux/slices/loginSlice";
 import { Link } from "react-router-dom";
 
 import classes from "./LoginPage.module.scss";
 
 const LoginPage = () => {
+  const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [logged, setLogged] = useState(false);
+
+  const isLogged = useSelector((state) => state.login.isLogged);
+  const authToken = useSelector((state) => state.login.authToken);
 
   useEffect(() => {
-    if (logged) {
-      window.location.href = "/homePage";
+    if (isLogged && authToken) {
+      dispatch(getMe({ authToken: authToken }));
+      window.location = "/homePage";
     }
-  }, [logged]);
+  }, [authToken]);
 
   return (
     <div className={classes.ContainerLogin}>
@@ -55,7 +59,9 @@ const LoginPage = () => {
       </div>
       <div className={classes.LoginRow}>
         <button
-          //onClick={() => login()}
+          onClick={() => {
+            dispatch(login({ email: email, password: password }));
+          }}
           className={classes.LoginBtn}
         >
           {" "}
