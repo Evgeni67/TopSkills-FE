@@ -1,0 +1,56 @@
+.ContainerLogin {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 420px;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 400px;
+  align-items: center;
+  background-color: #343a40;
+  border-radius: 40px;
+  border: 1px solid #2a2f35;
+  margin-bottom: 32vh;
+
+  .LoginText {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    margin: 35px auto 30px;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .CenteredRow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto 10px;
+    color: white;
+
+    .EmailInput {
+      height: 40px;
+      width: 220px;
+    }
+
+    .PasswordInput {
+      height: 40px;
+      width: 220px;
+    }
+  }
+
+  .LoginRow {
+    margin-top: 30px;
+
+    .LoginBtn {
+      width: 230px;
+      height: 50px;
+    }
+  }
+}
